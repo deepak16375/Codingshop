@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [{ "src": "server.js", "use": "@now/node" }],
+    "routes": [
+      { "src": "/user/subscribe/:_workshop_id", "dest": "/user/subscribe/:_workshop_id" },
+      { "src": "/user/unsubscribe/:workshop_id", "dest": "/user/unsubscribe/:workshop_id" },
+      { "src": "/user/getUserWorkshops", "dest": "/user/getUserWorkshops" },
+      { "src": "/workshop/register", "dest": "/workshop/register" },
+      { "src": "/workshop/getAll", "dest": "/workshop/getAll" },
+      { "src": "/workshop/get/:_id", "dest": "/workshop/get/:_id" },
+      { "src": "/workshop/update/:_id", "dest": "/workshop/update/:_id" },
+      { "src": "/workshop/delete/:_id", "dest": "/workshop/delete/:_id" },
+      { "src": "/(.*)", "dest": "/" }
+    ]
+  }
+  
