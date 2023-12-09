@@ -20,20 +20,12 @@ const dbURL = process.env.DBURL;
 
 const app = express();
 
-// Update CORS configuration to allow requests from the specified domain
-app.use(
-  cors({
-    origin: 'https://codingshop.onrender.com',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-  })
-);
-
+app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hi');
-});
+app.get('/',(req,res)=>{
+  res.send("Hi");
+})
 
 app.use('/workshop', workshopRoutes);
 app.use('/user', userRoutes);
