@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+
+# Dependency directories
+package-lock.json
+npm-debug.log
+
+# dotenv environment variables file
+.env
+
+# Log files
+logs/
+*.log
+
+# Build output
+dist/
+build/
