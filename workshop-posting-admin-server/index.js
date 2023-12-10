@@ -22,6 +22,11 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.get('/',(req,res)=>{
+  res.send("Hi");
+})
+
 app.use('/workshop', workshopRoutes);
 app.use('/user', userRoutes);
 app.use(express.static(join(__dirname, 'public')));
