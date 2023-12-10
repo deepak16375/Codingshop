@@ -32,9 +32,7 @@ const page = () => {
       <section className="w-full h-screen">
         <Newsletter />
       </section>
-      <section>
-
-      </section>
+     
     </div>
   );
 };

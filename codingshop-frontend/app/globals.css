@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+
 *{
   scroll-behavior: smooth;
 }
@@ -14,4 +10,74 @@ body{
   padding: 0;
   margin: 0;
 
+}
+
+.wrapper h1{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+  padding: 0 30px;
+  
+}
+.wrapper h5{
+  font-size: 16px;
+  text-align: center;
+  font: 300;
+  margin-bottom: 100px;
+  color: var(--sub-title-color);
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin: 50px;
+
+ 
+}
+.card{
+  width: 350px;
+  height: 250px;
+  border-radius: 15px;
+  padding: 20px 30px;
+  margin: 10px;
+  position: relative;
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  transition: all 0.5s;
+
+}
+.card img{
+  height: 90px;
+  width: 90px;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+.card p{
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+.card h2{
+  font-weight: 900;
+  margin-bottom: 4px;
+
+}
+.card h4{
+ color: var(--sub-title-color); 
+ font-weight: 900;
+}
+h4.client-txt{
+  font-weight: 400;
+}
+.card:hover{
+  transform: scale(1.2);
+ background-color: var(--text-color);
+ z-index: 10000;
 }

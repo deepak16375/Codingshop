@@ -13,6 +13,8 @@ import host from './Host.png'
 import footerlogo from './logo2.png'
 import Login from './Login.png'
 import signup from './signup.png'
+import user1 from './user.jpg'
+import user2 from './user 2.jpg'
 export{
-    javascript,java,go,api,react,nodejs,python,Logo,arrow,create,promote,host,footerlogo,Login,signup
+    javascript,java,go,api,react,nodejs,python,Logo,arrow,create,promote,host,footerlogo,Login,signup,user1,user2
 }
